@@ -14,3 +14,20 @@ menu.addEventListener('click', function () {
      document.getElementById("btnCareers").addEventListener("click",function() {
         window.location.href = "/";
     });
+
+
+ document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('applicationForm');
+    const successMessage = document.getElementById('successMessage');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent actual form submission
+
+      // Show the success message
+      successMessage.textContent = "You’ve successfully applied!";
+
+      // Optionally clear the form
+      form.reset();
+    });
+  });
+
