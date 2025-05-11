@@ -197,4 +197,122 @@ z-index: 999;
     }
 }
 
+.main {
+    background: #e6ddddcb;
+}
+
+/* services */
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    margin: 10px;
+    height: 525px;
+    width: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 30px;
+    color: #fff;
+    background-color: #000;
+}
+
+
+.services__card:nth-child(1) {
+    background-image: url(/images/faith.jpg);
+}
+.services__card:nth-child(2) {
+    background-image: url(/images/enoch.jpg);
+}
+.services__card:nth-child(3) {
+    background-image: url(/images/kinfe.jpg);
+}
+.services__card:nth-child(4) {
+    background-image: url(/images/michael.jpg);
+}
+
+
+.services__card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(100, 100, 100, 0.8); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 0;
+}
+
+.services__card:hover::before {
+    opacity: 1;
+}
+
+.services__card p {
+    font-size: 1.5rem;
+    transition: transform 0.4s ease;
+    z-index: 1;
+    position: relative;
+}
+
+.services__card:hover p {
+    transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 960px) {
+    .services {
+        height: 1600px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services {
+        height: 1400px;
+    }
+
+    .services__card {
+        width: 300px;
+    }
+}
+
+
+/* Footer */
+.footer__container{
+    background-color: #d0c9c9cb;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__links{
+    width: 10%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+.footer__link--wrapper {
+    width: 100%;
+} 
+.contact{
+    margin-left: 200px;
+    width: 100%;
+}
 
