@@ -7,8 +7,8 @@ menu.addEventListener('click', function () {
     });
 
 
-    document.getElementById("btnExperience").addEventListener("click",function() {
-        window.location.href = "/";
+    document.getElementById("btnTrainees").addEventListener("click",function() {
+        window.location.href = "trainees.html";
     });
 
      document.getElementById("btnCareers").addEventListener("click",function() {
