@@ -227,17 +227,6 @@ z-index: 999;
     -moz-text-fill-color: transparent
 }
 
-.main__content h2{
-    font-size: 40px;
-    background-color: #4ddede;
-    background-image: linear-gradient(to top, black 0%, silver 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent
-}
-
 .main__content p {
 
     margin-top: 10px;
