@@ -132,7 +132,7 @@ z-index: 999;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: 30vh;
         font-size: 16px;
     }
 
@@ -227,17 +227,6 @@ z-index: 999;
     -moz-text-fill-color: transparent
 }
 
-.main__content h2{
-    font-size: 40px;
-    background-color: #4ddede;
-    background-image: linear-gradient(to top, black 0%, silver 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent
-}
-
 .main__content p {
 
     margin-top: 10px;
@@ -287,7 +276,7 @@ z-index: 999;
 }
 
 .main__img--container{
-    text-align: center;
+text-align: center;
 }
 
 #main__img {
@@ -317,9 +306,6 @@ z-index: 999;
         margin-top: 20px;
     }
 
-    .main__content h2{
-        font-size: 30px;
-    }
 
     .main__content p{
         font-size: 15px;
