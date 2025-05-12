@@ -1,12 +1,4 @@
 
-      // Show the success message
-      successMessage.textContent = "You’ve successfully applied!";
-
-      // Optionally clear the form
-      form.reset();
-    });
-  });*/
-
 document.addEventListener('DOMContentLoaded', function () {
     // Mobile menu toggle
     const menu = document.querySelector('#mobile-menu');
