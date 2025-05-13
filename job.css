@@ -132,7 +132,7 @@ z-index: 999;
         opacity: 1;
         transition: all 0.5s ease;
         z-index: 99;
-        height: 50vh;
+        height: 30vh;
         font-size: 16px;
     }
 
@@ -197,100 +197,54 @@ z-index: 999;
     }
 }
 
-.main {
-    background: #e6ddddcb;
+.job__list {
+  list-style: none;
+  padding: 0;
+  max-width: 300px;
+  margin: 30px auto;
 }
 
-/* services */
-.services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+.job__list li {
+  margin: 15px 0;
 }
 
-.services__container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.job__list a {
+  display: block;
+  padding: 12px;
+  background: rgba(104, 102, 102, 0.67);
+  color: white;
+  text-align: center;
+  text-decoration: none; 
+  border-radius: 5px;
+  font-weight: bold;
 }
 
-.services__card {
-    margin: 10px;
-    height: 525px;
-    width: 500px;
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-    padding: 30px;
-    color: #fff;
-    background-color: #000;
+.job__list a:hover {
+   background: #4ddede;
+   transition: all 0.3s ease;
 }
 
-
-.services__card:nth-child(1) {
-    background-image: url(/images/faith.jpg);
-}
-.services__card:nth-child(2) {
-    background-image: url(/images/enoch.jpg);
-}
-.services__card:nth-child(3) {
-    background-image: url(/images/kinfe.jpg);
-}
-.services__card:nth-child(4) {
-    background-image: url(/images/michael.jpg);
+.job__item {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-
-.services__card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(100, 100, 100, 0.8); 
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 0;
+.job__item p {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
+}
+.job__item h1 {
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #333;
 }
 
-.services__card:hover::before {
-    opacity: 1;
+.job__heading {
+    background-image: linear-gradient(to top, black 0%, silver 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
-
-.services__card p {
-    font-size: 1.5rem;
-    transition: transform 0.4s ease;
-    z-index: 1;
-    position: relative;
-}
-
-.services__card:hover p {
-    transform: scale(1.2);
-}
-
-
-@media screen and (max-width: 960px) {
-    .services {
-        height: 1600px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .services {
-        height: 1400px;
-    }
-
-    .services__card {
-        width: 300px;
-    }
-}
-
-
-
-

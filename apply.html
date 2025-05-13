@@ -6,8 +6,9 @@
     <title>Apply</title>
     <link rel="stylesheet" href="apply.css">
 </head>
-<div class="container">
-    <form action="action_page.php">
+<body>
+  <div class="container">
+  <form id="applicationForm">
   
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
@@ -31,8 +32,10 @@
       <input type="submit" value="Submit">
   
     </form>
+  <div id="successMessage" style="margin-top: 15px; color: green;"></div>
   </div>
-<body>
-    
+
+
+    <script src="app.js"></script>
 </body>
 </html>
